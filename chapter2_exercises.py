@@ -38,4 +38,3 @@
 	38.1
 	#Convert to minutes 0:38:06 + 6:52:00 7:30:06
 	#There is probably a better way to do the converstion and addition
-
