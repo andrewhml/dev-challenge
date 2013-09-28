@@ -89,3 +89,41 @@ def do_twice(f, argument ):
 	f(argument)
 
 do_twice(print_twice, 'spam' )
+
+#5
+def print_function(argument = 'Hello!'):
+	print argument
+
+def do_twice(f, argument):
+	f(argument)
+	f(argument)
+
+def do_four(f, argument):
+	do_twice(f, argument)
+	do_twice(f, argument)
+
+do_four(print_function, 'Spam')
+
+
+#3.5
+def print_lines():
+	print '|', ' '* 9, '|', ' ' * 9, '|'
+
+def print_divider():
+	print '+ ', '- ' * 4, '+ ', '- ' * 4, '+'
+
+def four_lines(f):
+	f()
+	f()
+	f()
+	f()
+
+def print_box():
+	print_divider()
+	four_lines(print_lines)
+	print_divider()
+	four_lines(print_lines)
+	print_divider()
+
+
+
